@@ -1,0 +1,9 @@
+
+<% albumArr.forEach(album => { %>
+    <p><%= album.name %></p>
+    <% if (album.images.length) { %>
+        <img src="<%= album.images[0].url %>"/>
+    <% } %>
+ <a href = "<%= album.external_urls.spotify %>">View Albums</a>
+    
+    <% }) %>
